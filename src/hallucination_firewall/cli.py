@@ -30,7 +30,7 @@ _BLOCKED_HOSTS = re.compile(
 
 
 @click.group()
-@click.version_option(package_name="hallucination-firewall")
+@click.version_option(package_name="ai-hallucination-firewall")
 def main() -> None:
     """AI Hallucination Firewall — validates AI-generated code against real sources."""
 

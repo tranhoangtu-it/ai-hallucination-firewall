@@ -11,7 +11,7 @@ from ..models import IssueType, Severity, ValidationResult
 SARIF_VERSION = "2.1.0"
 SARIF_SCHEMA = "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json"
 TOOL_NAME = "hallucination-firewall"
-TOOL_VERSION = "0.1.0"
+TOOL_VERSION = "0.2.0"
 
 
 def _severity_to_sarif_level(severity: Severity) -> str:
@@ -115,7 +115,7 @@ def print_sarif(
                     "driver": {
                         "name": TOOL_NAME,
                         "version": TOOL_VERSION,
-                        "informationUri": "https://github.com/yourusername/hallucination-firewall",
+                        "informationUri": "https://github.com/tranhoangtu-it/ai-hallucination-firewall",
                         "rules": _build_sarif_rules(),
                     },
                 },
